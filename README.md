@@ -1,11 +1,6 @@
-# yolo-cbam
-YOLO computer vision algorithm and CBAM module addition.
-
-You can update this template with your own username, model file paths and any details you wish to add. Adding more sections or changing the format is entirely up to your preferences.
-
 # YOLOv8 + CBAM Integration
 
-This repository demonstrates how to integrate **CBAM** (Convolutional Block Attention Module) into Ultralytics’ YOLOv8 instance-segmentation model. It logs which layers are wrapped with CBAM both at integration time and during each forward pass.
+This repository demonstrates how to integrate **CBAM** (Convolutional Block Attention Module) into Ultralytics’ YOLOv8 instance-segmentation model. It logs which layers are wrapped with CBAM both at integration time and during each forward pass. You can also explore the fully annotated Jupyter notebook in `yolocbam.ipynb`.
 
 ## 📖 Project Overview
 
@@ -37,9 +32,21 @@ This repository demonstrates how to integrate **CBAM** (Convolutional Block Atte
 - **Plug-and-Play**  
   Easily drop into any YOLOv8-segmentation training pipeline.
 
+- **Notebook Included**  
+  A step-by-step Jupyter notebook `yolocbam.ipynb` is provided for interactive exploration and demonstration.
+
 ## ⚙️ Installation
 
 1. **Clone the repo**  
    ```bash
    git clone https://github.com/<your-username>/yolov8-cbam.git
    cd yolov8-cbam
+
+**Create & activate a virtual environment (optional)**
+
+python3 -m venv venv
+source venv/bin/activate
+
+**Install dependencies**
+pip install ultralytics torch
+
